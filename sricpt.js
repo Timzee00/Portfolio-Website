@@ -32,7 +32,32 @@ window.addEventListener("scroll", () => {
 
 // ===== Contact Form Simulation =====
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    alert("Message sent! (simulation)");
+
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: contactForm.name.value,
+    email: contactForm.email.value,
+    message: contactForm.message.value
+  };
+
+  try {
+    const response = await fetch("https://formspree.io/f/xwpgzwer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      contactForm.reset();
+    } else {
+      alert("Message failed. Please check your input or try again.");
+    }
+  } catch (error) {
+    alert("Something went wrong. Please try again later.");
+}
 });
