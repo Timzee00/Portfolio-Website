@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Timzee — Computer Science student, software developer, AI systems builder, web designer and graphics designer." />
+    <title>Timzee — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://github.com/Timzee00.png?size=64" />
+</head>
+<body>
+    <header>
+        <a class="logo" href="#top">TIMZEE<span>DEV</span></a>
+        <nav aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="profile-frame">
+                    <img
+                        class="profile-photo"
+                        src="https://github.com/Timzee00.png?size=512"
+                        alt="Timzee"
+                        width="180"
+                        height="180"
+                        fetchpriority="high"
+                    />
+                </div>
+                <p class="eyebrow">Software • AI • Web • Design</p>
+                <h1 id="hero-title">Hi, I’m <span>Timzee</span></h1>
+                <p class="hero-description">Computer Science student, software developer and AI systems builder creating useful digital products.</p>
+                <div class="hero-actions">
+                    <button id="hireBtn" type="button">Hire Me</button>
+                    <a class="secondary-button" href="#projects">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-inner">
+                <p class="section-kicker">About Me</p>
+                <h2 class="title">Building with code and creativity.</h2>
+                <p class="about-copy">
+                    I'm Timzee — a Computer Science student growing from graphic design into web development, software engineering and AI systems. I combine visual communication with code to build clean, practical and user-focused digital experiences.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-inner">
+                <p class="section-kicker">Skills</p>
+                <h2 class="title">What I work with</h2>
+                <div class="skills-grid">
+                    <div class="skill"><span>HTML</span><div class="skill-bar"><div class="skill-fill" data-percentage="90%"></div></div></div>
+                    <div class="skill"><span>CSS</span><div class="skill-bar"><div class="skill-fill" data-percentage="85%"></div></div></div>
+                    <div class="skill"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-percentage="70%"></div></div></div>
+                    <div class="skill"><span>Graphics Design</span><div class="skill-bar"><div class="skill-fill" data-percentage="95%"></div></div></div>
+                    <div class="skill"><span>Video Editing</span><div class="skill-bar"><div class="skill-fill" data-percentage="80%"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-inner">
+                <p class="section-kicker">Projects</p>
+                <h2 class="title">Things I’m building</h2>
+                <div class="projects">
+                    <article class="card"><h3>NIMA COLLECTION</h3><p>Modern Nigerian e-commerce storefront with inventory, checkout, WhatsApp ordering and staff management.</p></article>
+                    <article class="card"><h3>THE VERGE</h3><p>Business operating system for SMEs with inventory, customers, orders, finance, analytics and AI assistance.</p></article>
+                    <article class="card"><h3>SwissKit</h3><p>A digital platform project focused on useful tools, accounts, rewards and admin management.</p></article>
+                    <article class="card"><h3>Timzee MD</h3><p>WhatsApp automation concept for business workflows, smart replies and useful messaging tools.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-inner">
+                <p class="section-kicker">Contact</p>
+                <h2 class="title">Let’s build something useful.</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="name" required />
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="email" required />
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p class="email-line">Email: <a href="mailto:timzeegraphics@gmail.com">timzeegraphics@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Timzee | Powered by Timzee Corp</p>
+        <div class="socials">
+            <a href="https://github.com/Timzee00" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/salawudeen-timileyin-80a795374/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/Salawudeen6002" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://wa.me/2349167151683?text=Hi%20Timzee%2C%20I%20got%20your%20contact%20from%20your%20portfolio." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
